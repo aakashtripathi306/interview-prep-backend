@@ -23,7 +23,9 @@ app.use(cors());
 
 // Connect to DB
 connectDB();
-
+app.get('/',(req,res)=>{
+  res.send("Ai api is running")
+})
 // Middleware
 app.use(express.json());
 
